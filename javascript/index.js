@@ -165,3 +165,6 @@ Promise.all([
     document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprouts are ready!</li>`;
     document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
   })
+  .catch((error) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>Failed to load instructions</li>`;
+  })
